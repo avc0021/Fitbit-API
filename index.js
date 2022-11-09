@@ -1,20 +1,8 @@
 // 1. This is for sleep
 // const access_token =
-//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd3JlcyB3bG9jIiwiZXhwIjoxNjY3MDU1NDgyLCJpYXQiOjE2NjQ0NjM0ODJ9.u4sgRaTARrh3vlr4GH5q0sLvPXcrKo5o8SD-6xgz158";
+//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd2xvYyB3cmVzIiwiZXhwIjoxNjY4NjM1MzQwLCJpYXQiOjE2NjgwMzA1NDB9.pgD9lzZDXtUVR94oU31oDFTuffhyycck4-aSejj6WRU";
 
-// fetch("https://api.fitbit.com/1/user/5295Q2/sleep/date/2022-10-02.json", {
-//   method: "GET",
-//   headers: { Authorization: "Bearer " + access_token },
-// })
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
-
-
-// 2. Heartrate Variability
-// const access_token =
-//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd3JlcyB3bG9jIiwiZXhwIjoxNjY3MDU1NDgyLCJpYXQiOjE2NjQ0NjM0ODJ9.u4sgRaTARrh3vlr4GH5q0sLvPXcrKo5o8SD-6xgz158";
-
-// fetch("https://api.fitbit.com/1/user/5295Q2/hrv/date/2022-09-01.json", {
+// fetch("https://api.fitbit.com/1/user/5295Q2/sleep/date/2022-10-01/2022-10-10.json", {
 //   method: "GET",
 //   headers: { Authorization: "Bearer " + access_token },
 // })
@@ -24,25 +12,40 @@
 
 // 3. Minutes of exercise (divided into preset heart rate zones) // 4. Active zones mins
 // const access_token =
-//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd3JlcyB3bG9jIiwiZXhwIjoxNjY3MDU1NDgyLCJpYXQiOjE2NjQ0NjM0ODJ9.u4sgRaTARrh3vlr4GH5q0sLvPXcrKo5o8SD-6xgz158";
+//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd2xvYyB3cmVzIiwiZXhwIjoxNjY4NjM1MzQwLCJpYXQiOjE2NjgwMzA1NDB9.pgD9lzZDXtUVR94oU31oDFTuffhyycck4-aSejj6WRU";
 
-// fetch("https://api.fitbit.com/1/user/5295Q2/activities/list.json?afterDate=2022-10-01&sort=asc&offset=0&limit=10", {
+// fetch("https://api.fitbit.com/1/user/5295Q2/activities/list.json?beforeDate=2022-10-27&sort=asc&offset=0&limit=100", {
 //   method: "GET",
 //   headers: { Authorization: "Bearer " + access_token },
 // })
 //   .then((response) => response.json())
 //   .then((json) => console.log(json));
 
-// 5. Cardio Fitness Score (also know as VO2 Max)  
+//4. Cardio Fitness score
 const access_token =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd3JlcyB3bG9jIiwiZXhwIjoxNjY3MDU1NDgyLCJpYXQiOjE2NjQ0NjM0ODJ9.u4sgRaTARrh3vlr4GH5q0sLvPXcrKo5o8SD-6xgz158";
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd2xvYyB3cmVzIiwiZXhwIjoxNjY4NjM1MzQwLCJpYXQiOjE2NjgwMzA1NDB9.pgD9lzZDXtUVR94oU31oDFTuffhyycck4-aSejj6WRU";
 
-fetch("https://api.fitbit.com/1/user/5295Q2/cardioscore/date/2021-10-04.json", {
+fetch("https://api.fitbit.com/1/user/5295Q2/cardioscore/date/2022-10-10.json", {
   method: "GET",
-  headers: { Authorization: "Bearer " + access_token }
+  headers: { Authorization: "Bearer " + access_token },
 })
   .then((response) => response.json())
   .then((json) => console.log(json));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
