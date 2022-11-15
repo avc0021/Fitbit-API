@@ -25,7 +25,7 @@
 const access_token =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhWWkIiLCJzdWIiOiI1Mjk1UTIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd2xvYyB3cmVzIiwiZXhwIjoxNjY4NjM1MzQwLCJpYXQiOjE2NjgwMzA1NDB9.pgD9lzZDXtUVR94oU31oDFTuffhyycck4-aSejj6WRU";
 
-fetch("https://api.fitbit.com/1/user/5295Q2/cardioscore/date/2022-10-10.json", {
+fetch("https://api.fitbit.com/1/user/5295Q2/cardio_fitness/date/2022-10-10.json", {
   method: "GET",
   headers: { Authorization: "Bearer " + access_token },
 })
